@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "B1_LamQuen", "B1_LamQuen\B1
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "B2_Panel", "B2_Panel\B2_Panel.csproj", "{D4026A63-14EA-4D5C-B74A-6264CC3B77A6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "B3_DataGridview_ListView", "B3_DataGridview_ListView\B3_DataGridview_ListView.csproj", "{FA60D007-EA7D-4326-9F10-D75F3CE36C11}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{D4026A63-14EA-4D5C-B74A-6264CC3B77A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D4026A63-14EA-4D5C-B74A-6264CC3B77A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D4026A63-14EA-4D5C-B74A-6264CC3B77A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA60D007-EA7D-4326-9F10-D75F3CE36C11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA60D007-EA7D-4326-9F10-D75F3CE36C11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA60D007-EA7D-4326-9F10-D75F3CE36C11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA60D007-EA7D-4326-9F10-D75F3CE36C11}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

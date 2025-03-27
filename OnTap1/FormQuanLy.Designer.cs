@@ -157,6 +157,7 @@
             dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dataGridView1.Size = new Size(909, 188);
             dataGridView1.TabIndex = 9;
+            dataGridView1.CellClick += dataGridView1_CellClick;
             dataGridView1.Click += dataGridView1_Click;
             // 
             // buttonThem
@@ -177,6 +178,7 @@
             buttonCapNhat.TabIndex = 11;
             buttonCapNhat.Text = "Cập nhật";
             buttonCapNhat.UseVisualStyleBackColor = true;
+            buttonCapNhat.Click += buttonCapNhat_Click;
             // 
             // button3
             // 

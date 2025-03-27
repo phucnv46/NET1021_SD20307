@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnTap1", "OnTap1\OnTap1.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "B4_KetNoiDatabase_EFCore", "B4_KetNoiDatabase_EFCore\B4_KetNoiDatabase_EFCore.csproj", "{6CDFDFC1-4F18-4503-9A1F-F5DE1964C521}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "B5_MultiView", "B5_MultiView\B5_MultiView.csproj", "{5DD730A6-CCAC-48E6-AE42-AB6C972D19FD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{6CDFDFC1-4F18-4503-9A1F-F5DE1964C521}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6CDFDFC1-4F18-4503-9A1F-F5DE1964C521}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6CDFDFC1-4F18-4503-9A1F-F5DE1964C521}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DD730A6-CCAC-48E6-AE42-AB6C972D19FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DD730A6-CCAC-48E6-AE42-AB6C972D19FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DD730A6-CCAC-48E6-AE42-AB6C972D19FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DD730A6-CCAC-48E6-AE42-AB6C972D19FD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

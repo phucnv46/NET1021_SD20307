@@ -56,7 +56,7 @@ namespace OnTap1
         {
             dataGridView1.DataSource = _students;
             dataGridView1.ReadOnly = true;
-            
+
 
 
             comboBox1.DataSource = new BindingList<Mon>()
@@ -73,11 +73,24 @@ namespace OnTap1
 
         private void dataGridView1_Click(object sender, EventArgs e) //chuyển lại dữ liệu từ model sinh viên vào các controls
         {
-           SinhVien sinhVien =(SinhVien) dataGridView1.SelectedRows[0].DataBoundItem;
+            
+        }
+
+        private void buttonCapNhat_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            SinhVien sinhVien = (SinhVien)dataGridView1.SelectedRows[0].DataBoundItem;
             textBoxMSV.Text = sinhVien.MaSinhVien;
-   
-            textBoxTen.Text = sinhVien.Ten; 
+
+            textBoxTen.Text = sinhVien.Ten;
+            dateTimePicker1.Value = sinhVien.NgaySinh;
+            comboBox1.SelectedValue = sinhVien.Mon;
+            radioButtonNam.Checked = sinhVien.GioiTinh;
             //...
+
         }
     }
 }

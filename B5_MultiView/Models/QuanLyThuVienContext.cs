@@ -91,7 +91,7 @@ public partial class QuanLyThuVienContext : DbContext
             entity.Property(e => e.TacGia).HasMaxLength(255);
             entity.Property(e => e.TenSach).HasMaxLength(255);
 
-            entity.HasOne(d => d.MaTheLoaiNavigation).WithMany(p => p.Saches)
+            entity.HasOne(d => d.TheLoai).WithMany(p => p.Saches)
                 .HasForeignKey(d => d.MaTheLoai)
                 .OnDelete(DeleteBehavior.Cascade)
                 .HasConstraintName("FK_Sach_TheLoai");

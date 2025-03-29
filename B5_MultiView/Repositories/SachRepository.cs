@@ -28,5 +28,68 @@ namespace B5_MultiView.Repositories
         {
             return _dbSet;
         }
+
+
+        public List<Sach> LayDSKemQuanHe(params string[] relatations)
+        {
+            // Code vào đây :)
+            var query = _dbSet.AsQueryable(); // Chuyển bảng query
+          
+            foreach (var rel in relatations)
+            {
+                query = query.Include(rel); // Bao gồm
+            }
+            
+            return query.ToList();
+        }
+
+
+        public void Them(Sach sach)
+        {
+            // Code vào đây :)
+            try
+            {
+                _dbSet.Add(sach);
+                _context.SaveChanges();
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        public void Update(Sach sach)
+        {
+            // Code vào đây :)
+            try
+            {
+                _dbSet.Update(sach);
+                _context.SaveChanges();
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+
+        public void Delete(Sach sach)
+        {
+            // Code vào đây :)
+            try
+            {
+                _dbSet.Remove(sach);
+                _context.SaveChanges();
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+
     }
 }

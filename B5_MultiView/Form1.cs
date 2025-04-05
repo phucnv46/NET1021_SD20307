@@ -6,7 +6,7 @@ namespace B5_MultiView
     {
         public Form1()
         {
-            int quyen = 1;
+          
             InitializeComponent();
             LoadSachView();
            

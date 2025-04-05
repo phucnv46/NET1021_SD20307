@@ -1,6 +1,7 @@
 ﻿using B5_MultiView.DTOs;
 using B5_MultiView.Models;
 using B5_MultiView.Repositories;
+using ClosedXML.Excel;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using System;
@@ -121,7 +122,7 @@ namespace B5_MultiView.Views
 
         private void buttonTimKiem_Click(object sender, EventArgs e)
         {
-           
+
             string search = textBoxTK.Text;
 
             /*List<Sach> listTimKiem = (from sach in _saches where sach.TenSach.
@@ -132,6 +133,30 @@ namespace B5_MultiView.Views
             List<Sach> listTimKiem = _saches.Where(s => s.TenSach.Contains(search, StringComparison.OrdinalIgnoreCase)).ToList();
 
             dataGridView1.DataSource = listTimKiem;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            using (XLWorkbook workbook = new XLWorkbook())
+            {
+                IXLWorksheet sheet = workbook.Worksheets.Add("Sách");
+
+                foreach (DataGridViewColumn col in dataGridView1.Columns)
+                {
+                    sheet.Cell(1, col.Index + 1).Value = col.HeaderText;
+                }
+
+                foreach (DataGridViewRow row in dataGridView1.Rows)
+                {
+                    foreach (DataGridViewColumn col in dataGridView1.Columns)
+                    {
+                        sheet.Cell(2 + row.Index, col.Index + 1).Value = dataGridView1.Rows[row.Index].Cells[col.Index].Value.ToString();
+                    }
+                }
+
+                workbook.SaveAs("../../../Sach.xlsx");
+            }
+
         }
     }
 }

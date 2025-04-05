@@ -47,6 +47,7 @@
             buttonLM = new Button();
             buttonTimKiem = new Button();
             textBoxTK = new TextBox();
+            button1 = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -222,10 +223,21 @@
             textBoxTK.Size = new Size(350, 27);
             textBoxTK.TabIndex = 19;
             // 
+            // button1
+            // 
+            button1.Location = new Point(593, 252);
+            button1.Name = "button1";
+            button1.Size = new Size(139, 34);
+            button1.TabIndex = 20;
+            button1.Text = "Xuất file excel";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
             // SachView
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            Controls.Add(button1);
             Controls.Add(textBoxTK);
             Controls.Add(buttonTimKiem);
             Controls.Add(buttonLM);
@@ -273,5 +285,6 @@
         private Button buttonLM;
         private Button buttonTimKiem;
         private TextBox textBoxTK;
+        private Button button1;
     }
 }

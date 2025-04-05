@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "B4_KetNoiDatabase_EFCore", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "B5_MultiView", "B5_MultiView\B5_MultiView.csproj", "{5DD730A6-CCAC-48E6-AE42-AB6C972D19FD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LuyenTap2", "LuyenTap2\LuyenTap2.csproj", "{A710B2AB-4D31-4EEA-B42D-9D663AB4B0CF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{5DD730A6-CCAC-48E6-AE42-AB6C972D19FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5DD730A6-CCAC-48E6-AE42-AB6C972D19FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5DD730A6-CCAC-48E6-AE42-AB6C972D19FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A710B2AB-4D31-4EEA-B42D-9D663AB4B0CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A710B2AB-4D31-4EEA-B42D-9D663AB4B0CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A710B2AB-4D31-4EEA-B42D-9D663AB4B0CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A710B2AB-4D31-4EEA-B42D-9D663AB4B0CF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
